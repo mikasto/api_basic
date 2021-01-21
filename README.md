@@ -7,7 +7,7 @@
 
 1. Based on Yii 2 Basic skeleton.
 2. Database Mysql & auto create table news (title, body) using migrations
-3. REST API /api/v1/news with auth by user's accessToken (admin='100-token'). Rate limit 1 for 5 seconds added. For security using tokens adding reshresh tokens are recommended.
+3. REST API /api/v1/news with auth by user's accessToken (admin='100-token'). Rate limit 1 for 5 seconds added. Recommendation: add using reshresh tokens for tokens security.
 4. Index page of project output News list by async request to REST API http://localhost:8000/api/v1/news/list cutted to 10 news items.
 
 
