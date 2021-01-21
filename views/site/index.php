@@ -17,11 +17,13 @@ jQuery.ajax({
   },
   success: function (data, status, xhr) {
 	  jQuery('.row').html('');
-	  for (var item in data) {
+	  for (var i in data) {
+		if (i >= 10)
+			return;
 		jQuery('.row').append(
 			jQuery('<div class="col-lg-4">')
-				.append(jQuery('<h2>').html(data[item].title))
-				.append(jQuery('<p>').html(data[item].body))
+				.append(jQuery('<h2>').html(data[i].title))
+				.append(jQuery('<p>').html(data[i].body))
 			);
 	  }
   }
