@@ -5,7 +5,7 @@
 $this->title = 'My Yii Application';
 $js = <<< JS
 jQuery.ajax({
-  url: "/api/v1/news/index",
+  url: "/api/v1/news/list",
   async : true,
   contentType: 'application/json',
   dataType: 'json',
